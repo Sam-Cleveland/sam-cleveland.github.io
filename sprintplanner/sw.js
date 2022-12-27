@@ -6,14 +6,14 @@ const addResourcesToCache = async (resources) => {
 self.addEventListener("install", (event) => {
   event.waitUntil(
     addResourcesToCache([
-      "/",
-      "/index.html",
-      "/style.css",
-      "/renderer.js",
-      "/vex-theme-plain.css",
-      "/vex.combined.min.js",
-      "/vex.css",
-      "/icon.png",
+      "/sprintplanner/",
+      "/sprintplanner/index.html",
+      "/sprintplanner/style.css",
+      "/sprintplanner/renderer.js",
+      "/sprintplanner/vex-theme-plain.css",
+      "/sprintplanner/vex.combined.min.js",
+      "/sprintplanner/vex.css",
+      "/sprintplanner/icon.png",
     ])
   );
 });
