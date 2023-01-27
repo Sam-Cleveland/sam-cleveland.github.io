@@ -1,7 +1,7 @@
 :root{
     --light-gray: #ECEAEC;
-    --white: #fbfcffff;
-    --davys-grey: #605856ff;
+    --white: #F8F8F8;
+    --jet: #403B3A;
     --blue-sapphire: #1c6e8cff;
     --charcoal: #13202A;
 }
@@ -11,7 +11,8 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    background-color: var(--white);
+    font-weight:300;
+    background-color: var(--light-gray);
 }
 
 .content {
@@ -20,6 +21,7 @@ body {
     margin-right:auto;
     max-width:2000px;
     margin-top:0px;
+    width:100%;
 }
 
 .center {
@@ -33,4 +35,77 @@ body {
     top: 23%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.navbar {
+    font-weight:200;
+    position:relative;
+    height:56px;
+    width:100%;
+    background-color: var(--jet);
+    z-index: 5;
+}
+
+.navlink {
+    position: relative;
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 9px;
+    margin: none;
+    text-align:center;
+    min-height: 56px;
+    background-color: inherit;
+    color: var(--light-gray);
+    
+    transition: color 0.2s;
+    transition: background 0.2s;
+}
+
+.navlink a{
+    position:relative;
+    color: inherit;
+    font-size: 29px;
+    text-decoration:none;
+}
+
+.navlink:hover{
+    background-color: var(--light-gray);
+    color: var(--jet);
+}
+
+.about {
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.aboutimg{
+    position: relative;
+    display: inline;
+    float: right;
+    right:0;
+    width: 50%;
+}
+
+.fa {
+    color: var(--charcoal);
+    padding: 20px;
+    font-size: 60px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.link {
+    font-size:80px;
+    padding-left:20px;
+    text-decoration:none;
+    color:var(--charcoal);
+    
 }
